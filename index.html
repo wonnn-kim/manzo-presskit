@@ -4,148 +4,118 @@
   <meta charset="UTF-8" />
   <title>Manzo by Team Sangrin Presskit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      background: #111;
-      color: #eee;
-      font-family: Arial, sans-serif;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    h1, h2 {
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    ul {
-      list-style: disc;
-      margin-left: 20px;
-    }
-    .logo {
-      display: block;
-      margin: 0 auto 40px;
-      max-width: 300px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-    }
-    .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css">
 </head>
 <body>
 
-  <!-- Large Logo -->
-  <img src="logo.png" alt="Game Logo" class="logo" />
+  <header class="header">
+      <img src="images/Manzo_title_text.png" alt="Game Logo" class="logo" />
+  </header>
+  
+  <div class="container">
+    <aside class="sidebar">
+      <nav class="menu">
+        <ul>
+        <li><a href="#trailer">Trailer</a></li>
+        <li><a href="#quick-facts">Quick Facts</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#logos">Branding</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-  <!-- Quick Facts -->
-  <div class="section">
-    <h2>Quick Facts</h2>
-    <p><strong>Game Name:</strong> Manzo</p>
-    <p> 엘리베이터 피치 :  마일스톤 보고서에서 가져오기</p>
-    <p><strong>Developer Contact:</strong> 누구 메일을 쓰지? @example.com</p>
-    <h3>Features:</h3>
-    <ul>
-      <li>3 impressive bosses</li>
-      <li>Rhythm adventure game</li>
-      <li>Original soundtrack</li>
-    </ul>
-    <h3>Links:</h3>
-    <ul>
-      <li><a href="#">GitHub Repository</a></li>
-    </ul>
-    <h3>Platforms & Release:</h3>
-    <ul>
-      <li>PC (Windows)</li>
-      <li>Planned Release: Fall 2025</li>
-      <li>System Requirements: 이걸 어케암??</li>
-    </ul>
+  
+
+  <!-- content -->
+  <main class="content">
+
+    
+    <!-- Trailer -->
+    <section id="trailer" class="section">
+      <h2>Trailer</h2>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/D_9HhUMfCp8" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section id="quick-facts" class="section">
+      <h2>Quick Facts</h2>
+      <p><strong>Game Name : </strong> Manzo</p>
+      <p><strong>Description:</strong> </p>
+      <p>This game is a hybrid of exploration, metroidvania, and rhythm genres.
+      Horror elements are added to heighten the tension as you dive deeper into the ocean depths.</p>
+      <p><strong>Developer Contact:</strong> 
+        <a href="mailto:weare1842@gmail.com">weare1842@gmail.com</a>
+      </p>
+
+      <h3>Features:</h3>
+      <ul>
+        <li>Limited Lighting</li>
+        <li>Original soundtrack</li>
+        <li>3 impressive bosses</li>
+      </ul>
+      <h3>Links:</h3>
+      <ul>
+        <li><a href="https://github.com/Seohyeon-Min/manzo">GitHub Repository</a></li>
+      </ul>
+      <h3>Platforms & Release:</h3>
+      <ul>
+        <li>PC (Windows)</li>
+        <li>Planned Release: Fall 2025</li>
+      </ul>
+    </section>
+
+    <!-- Description -->
+    <section id="description" class="section">
+      <h3>Gameplay:</h3>
+      <p>Use mouse left click for dash, hover with the mouse, collect fish, sell them, buy modules, and go deeper. Avoid monsters and crashing rocks, endure boss attacks, and continue your adventure.</p>
+    </section>
+
+    <!-- GamePlay -->
+    <section id="gameplay" class="section">
+      <h2>GamePlay</h2>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/SZS0adv905Q?si=YZjC4O3iNZ8Hc61Z" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section id="screenshots" class="section">
+      <h3>Screenshots:</h3>
+      <div class="gallery">
+        <img src="images/main_screen.png" alt="main_screen">
+        <img src="images/home.png" alt="home">
+        <img src="images/sea.png" alt="sea">
+        <img src="images/boss.png" alt="boss">
+        <img src="images/cutscene1.jpg" alt="cutscene1">
+        <img src="images/characters.png" alt="characters">
+      </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section id="contact" class="section">
+      <h2>Call to Action</h2>
+      <p>Contact us for press keys, interviews, or more information. We’re happy to collaborate!</p>
+    </section>
+
+    <!-- About the Developer -->
+    <section class="section">
+      <h2>About the Developers</h2>
+      <p><strong>Team Sangrin</strong></p>
+      <p>- <strong>Seohyun Min</strong> : Producer  </p>
+      <p>- <strong>Won Kim</strong> : Art Leader  </p>
+      <p>- <strong>Seokhwa Hong</strong> : QA Leader   </p>
+      <p>- <strong>Gyuwon Na</strong> : Technical Leader  </p>
+      <p>- <strong>Jiyeop Kang</strong> : Level Designer  </p>
+    </section>
+
+  </main>
+
   </div>
-
-  <!-- Demo -->
-  <!-- <div class="section">
-    <h2>Demo</h2>
-    <p><a href="#">Download Demo</a> or contact us for a key.</p>
-    <h3>System Requirements:</h3>
-    <ul>
-      <li>OS: Windows 10 / macOS 11+</li>
-      <li>Processor: Intel i5 or equivalent</li>
-      <li>Memory: 4GB RAM</li>
-      <li>Graphics: GTX 660 or better</li>
-    </ul>
-  </div> -->
-
-  <!-- Description -->
-  <div class="section">
-    <h2>Description</h2>
-    <p>
-      게임 설명 ~~~
-    </p>
-    <h3>Gameplay:</h3>
-    <p>
-      Use Mouse left click for dash, hovering around by moving mouse. Collect fish, sell the fish, buy modules and go deeper.
-    </p>
-    <p>Avoid the monster and crash the rock. Endure the boss's attack and continue your adventure.</p>
-    <h3>Trailer:</h3>
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/비디오.링크" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-
-    <h3>Screenshots:</h3>
-    <div class="gallery">
-      <img src="screenshot1.jpg" alt="Screenshot 1">
-      <img src="screenshot2.jpg" alt="Screenshot 2">
-      <img src="screenshot3.jpg" alt="Screenshot 3">
-    </div>
-
-    <h3>Branding:</h3>
-    <div class="gallery">
-      <img src="banner.jpg" alt="Banner Image">
-      <img src="character.png" alt="Character Render">
-      <img src="icon.png" alt="Game Icon">
-    </div>
-  </div>
-
-  <!-- Misc -->
-  <div class="section">
-    <h2>Call to Action</h2>
-    <p>Contact us for press keys, interviews, or more information. We’re happy to collaborate!</p>
-  </div>
-
-  <div class="section">
-    <h2>About the Developer</h2>
-    <p>Team Sangrin is the team for Digipen Institute of Technologie's GAM250 class. 대충 팀 설명 더 하기... +개인 팀원 설명?</p>
-  </div>
-
 </body>
 </html>

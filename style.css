@@ -1,0 +1,126 @@
+/* === 공통 === */
+html, body {
+    background:#313446;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Pretendard Variable', sans-serif;
+    color: #eee;
+    overflow-x: hidden;
+}
+
+/* === logo === */
+.header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.logo {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+}
+
+/* === container for sidebar, content === */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* === sidebar === */
+.sidebar {
+    width: 220px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+
+.sidebar .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu li {
+    margin-bottom: 15px;
+}
+
+.sidebar .menu a {
+    display: block;
+    background: #325983;
+    color: #eee;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.sidebar .menu a:hover {
+    background: #2f8af1;
+}
+
+/* === content === */
+.content {
+    flex: 1;
+    padding: 30px;
+    box-sizing: border-box;
+    max-width: 1000px;
+}
+
+    .section {
+        
+    margin-bottom: 60px;
+    }
+
+    h1, h2 {
+        
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+    }
+
+    h3 {
+    margin-top: 20px;
+    }
+
+    a {
+    color: #58a6ff;
+    text-decoration: none;
+    }
+
+    a:hover {
+    text-decoration: underline;
+    }
+
+    .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    }
+
+    .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    }
+
+    .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    }
